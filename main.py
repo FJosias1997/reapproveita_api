@@ -134,6 +134,16 @@ def listar_supermercados(db: Session = Depends(get_db)):
     supermercados = db.query(models.Supermercados).all()
     return supermercados
 
+# --- Recursos: Artigos ---
+
+@app.get("/artigos", response_model=List[schemas.ArtigosSchema], tags=["Artigos"])
+def listar_artigos(db: Session = Depends(get_db)):
+    """
+    Endpoint para listar todos os artigos cadastrados no banco de dados.
+    """
+    artigos = db.query(models.Artigos).all()
+    return artigos
+
 # --- 7. Ponto de Entrada (Main) ---
 # (Deve ficar no final do arquivo)
 

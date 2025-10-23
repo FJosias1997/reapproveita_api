@@ -7,7 +7,9 @@ from pydantic import BaseModel
 from . import categoria_produtos_schema
 from . import produtos_schema
 from . import supermercados_schema
+from . import artigos_schema
 
 ProdutosSchema = produtos_schema.ProdutosSchema
 CategoriaProdutosSchema = categoria_produtos_schema.CategoriaProdutosSchema
 SupermercadosSchema = supermercados_schema.SupermercadosSchema
+ArtigosSchema = artigos_schema.ArtigosSchema
