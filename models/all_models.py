@@ -10,7 +10,7 @@ from . import categoria_produtos_model
 from . import supermercados_model
 from . import artigos_model
 
-Produtos = produtos_model.Produtos
-CategoriaProdutos = categoria_produtos_model.CategoriaProdutos
-Supermercados = supermercados_model.Supermercados
-Artigos = artigos_model.Artigos
+ProdutosModel = produtos_model.Produtos
+CategoriaProdutosModel = categoria_produtos_model.CategoriaProdutos
+SupermercadosModel = supermercados_model.Supermercados
+ArtigosModel = artigos_model.Artigos

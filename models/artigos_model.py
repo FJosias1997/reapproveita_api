@@ -1,5 +1,5 @@
 from sqlalchemy import Column, Integer, String, Date
-from database import Base  # Importamos a Base do nosso arquivo database.py
+from database.database_con import Base  # Importamos a Base do nosso arquivo database.py
 from sqlalchemy.orm import relationship
 
 # Modelo do SQLAlchemy (Representa a tabela 'produtos' no Python)
